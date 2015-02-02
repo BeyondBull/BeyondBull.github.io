@@ -1,0 +1,46 @@
+#page_header {
+	background: #8A9BAB;
+	width: 100%;
+	border-bottom: #7e0909 solid 3px;
+}
+.site_title {
+	display: inline-block;
+	margin: 4% 0% 2% 2%;
+}
+.site_title a {
+	color: #505050;
+
+}
+
+.sub_page_nav {
+	display: inline-block;
+	margin: 1%;
+}
+.sub_page_nav a {
+	color: #505050;
+	margin-left: 10px;
+	
+}
+ .sub_page_nav a:hover {
+	color: #7e0909;
+}
+
+.icon_nav {
+	display: none;
+}
+.social-icon {
+	width: 30px;
+	height: 30px;
+}
+
+
+/*Tablet and Desktop*/
+@media screen and (min-width: 540px) {
+
+.icon_nav {
+	display: inline-block;
+	float: right;
+}
+
+	
+}

@@ -1,0 +1,95 @@
+/*  Home page/2 column layout
+------------------------------------------ */
+
+.page_content {
+	width: 96%;
+	margin: auto;
+}
+.col_content {
+	width: 90%;
+	margin: auto;
+	padding: 5% 0;
+}
+
+.col {
+	margin-top: 2%;
+	border-radius: 5px;
+}
+
+.main {
+}
+
+.secondary {
+	padding-top: 20px;
+}
+.secondary h2 {
+}
+.secondary ul {
+	padding-left: 5px;
+}
+
+/* Phones to Tablets */
+
+@media only screen and (min-width: 481px) {
+	.col {
+		float: left;
+	}
+	.main {
+		width: 66%;
+	}
+	.secondary {
+		width: 32%; 
+	}
+	.secondary {
+		margin-left: 2%;
+	}
+}
+
+/* Tablets to Desktop */
+
+@media only screen and (min-width: 769px) {	
+}
+
+/*  Projects page/Gallery layout
+------------------------------------------ */
+img {
+  max-width: 94%;
+  margin: 3% 3%;
+  border-radius: 5px;
+}
+
+.gallery {
+  margin: 0;
+  padding: 5px;
+  list-style: none;
+}
+
+.gallery li {
+  float: left;
+  width: 95%;
+  margin: 2.5%;
+  color: #bdc3c7;
+  background: #505050;
+}
+
+.gallery li a p {
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+  color: #bdc3c7;
+}
+
+
+/* Phones to Tablets */
+@media only screen and (min-width: 481px) {
+  .gallery li {
+    width: 45%;
+  }
+}
+
+/* Tablets to Desktop */
+@media only screen and (min-width: 769px) {	
+  .gallery li {
+    width: 28.3333%;
+  }
+}
