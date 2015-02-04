@@ -84,6 +84,7 @@ img {
 }
 .gallery iFrame {
   max-width: 94%;
+  max-height: 50%;
   margin: 3% 3%;
 }
 .gallery li a {
