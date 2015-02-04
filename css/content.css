@@ -77,8 +77,8 @@ img {
   width: 95%;
   margin: 2.5%;
   color: #bdc3c7;
-  background: #505050;
   opacity: .8;
+  border: #bdc3c7 solid 1px;
 }
 .gallery li:hover {
 	opacity: 1;
@@ -92,7 +92,6 @@ img {
 	margin: 2%;
 	color: #bdc3c7;
 }
-
 
 /* Phones to Tablets */
 @media only screen and (min-width: 481px) {

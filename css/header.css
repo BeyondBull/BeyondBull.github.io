@@ -15,6 +15,7 @@
 .sub_page_nav {
 	display: inline-block;
 	margin: 1%;
+	font-family: 'Maven Pro', sans-serif;
 }
 .sub_page_nav a {
 	color: #505050;
@@ -31,6 +32,7 @@
 
 .icon_nav {
 	display: none;
+	margin-right: 2%;
 }
 .social-icon {
 	width: 30px;
