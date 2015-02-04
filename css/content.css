@@ -15,7 +15,6 @@
 }
 .col {
 	margin-top: 2%;
-	border-radius: 5px;
 }
 
 .main {
@@ -64,14 +63,12 @@
 /*  Projects page/Gallery layout
 ------------------------------------------ */
 img {
-  max-width: 94%;
-  margin: 3% 3%;
-  border-radius: 5px;
+  width: 94%;
+  margin: 1%;
 }
 
 .gallery {
   margin-bottom: 10px;
-  padding: 5px;
   list-style: none;
 }
 
@@ -81,11 +78,10 @@ img {
   margin: 2.5%;
   color: #bdc3c7;
   background: #505050;
+  opacity: .8;
 }
-.gallery iFrame {
-  max-width: 94%;
-  max-height: 150px;
-  margin: 3% 3%;
+.gallery li:hover {
+	opacity: 1;
 }
 .gallery li a {
 	margin: 2%;
@@ -118,7 +114,7 @@ img {
 .contact-info {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-top: 30px;
   font-size: 0.9em; 
 }  
 
@@ -128,7 +124,7 @@ img {
   background-repeat: no-repeat;
   background-size: 20px 20px;
   padding: 0 0 0 30px;
-  margin: 0 0 10px;
+  margin:  0 0 0 10px;
   color: #7e0909;
 }
 

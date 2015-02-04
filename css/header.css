@@ -25,6 +25,10 @@
 	color: #7e0909;
 }
 
+.sub_page_nav a.current_page {
+	border-bottom: #7e0909 solid 1px;
+}
+
 .icon_nav {
 	display: none;
 }
