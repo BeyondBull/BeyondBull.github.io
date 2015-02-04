@@ -2,8 +2,7 @@
 ------------------------------------------ */
 
 .page_content {
-	width: 96%;
-	margin: auto;
+	width: 98%;
 }
 .col_content {
 	width: 90%;
@@ -62,10 +61,6 @@
 
 /*  Projects page/Gallery layout
 ------------------------------------------ */
-img {
-  width: 94%;
-  margin: 1%;
-}
 
 .gallery {
   margin-bottom: 10px;
@@ -74,25 +69,55 @@ img {
 
 .gallery li {
   float: left;
-  width: 95%;
-  margin: 2.5%;
-  color: #bdc3c7;
-  opacity: .8;
-  border: #bdc3c7 solid 1px;
-}
-.gallery li:hover {
-	opacity: 1;
-}
-.gallery li a {
-	margin: 2%;
-	color: #bdc3c7;
-	text-decoration: underline;
-}
-.gallery li p {
-	margin: 2%;
-	color: #bdc3c7;
+  margin: 1%;
+  width: 90%;
 }
 
+
+.thumb {
+  position: relative;
+  overflow: hidden;
+}
+  
+.thumb img {
+  border-radius: 2px;
+  border: #bdc3c7 solid 1px;
+  width: 99%;
+}
+  
+.thumb a .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  text-align: center;
+  background: rgba(255,255,255,0.68);
+  transition: all 0.8s ease-out;
+  opacity: 0;
+}
+
+.thumb a:hover .mask {
+  opacity:1;
+}
+  
+.thumb a .mask h3 {
+  display:inline-block;
+  margin-top: 20%;
+  padding: 3px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: #505050;
+  color: #fff;
+  border-radius: 2px;
+}
+ 
+.thumb a .mask p {
+  font-size: 15px;
+  color: #505050;
+}
 /* Phones to Tablets */
 @media only screen and (min-width: 481px) {
   .gallery li {
@@ -101,10 +126,34 @@ img {
 }
 
 /* Tablets to Desktop */
-@media only screen and (min-width: 769px) {	
+@media only screen and (min-width: 767px) {	
   .gallery li {
-    width: 28.3333%;
+    width: 30%;
   }
+}
+  
+@media all and (max-width: 767px) {
+  .thumb a .mask {
+    position: relative;
+    background: none;
+    opacity: 1;
+    margin-top: 0;
+    }
+  .thumb a .mask h3 {
+    margin-top: 0;
+    }
+}
+
+.mask em {
+  font-family: Baskerville, 'Adobe Garamond Pro', Times, serif;
+  font-style: italic;
+}
+  
+.hide * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
 }
 
 
