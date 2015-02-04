@@ -1,4 +1,4 @@
-/*  Home page/2 column layout
+/*  Home page/2 column with in 2 column layout
 ------------------------------------------ */
 
 .page_content {
@@ -10,7 +10,9 @@
 	margin: auto;
 	padding: 5% 0;
 }
-
+.col_content li {
+	margin-bottom: 5px;
+}
 .col {
 	margin-top: 2%;
 	border-radius: 5px;
@@ -26,6 +28,16 @@
 }
 .secondary ul {
 	padding-left: 5px;
+}
+.profile-photo {
+	float: left;
+	margin: 20px;
+	opacity: 1;
+	width: 30%;
+	border-radius: 100%;
+}
+.intro {
+	width 70%;
 }
 
 /* Phones to Tablets */
@@ -59,7 +71,7 @@ img {
 }
 
 .gallery {
-  margin: 0;
+  margin-bottom: 10px;
   padding: 5px;
   list-style: none;
 }
@@ -71,12 +83,18 @@ img {
   color: #bdc3c7;
   background: #505050;
 }
-
-.gallery li a p {
-  margin: 0;
-  padding: 5%;
-  font-size: 0.75em;
-  color: #bdc3c7;
+.gallery iFrame {
+  max-width: 94%;
+  margin: 3% 3%;
+}
+.gallery li a {
+	margin: 2%;
+	color: #bdc3c7;
+	text-decoration: underline;
+}
+.gallery li p {
+	margin: 2%;
+	color: #bdc3c7;
 }
 
 
@@ -93,3 +111,36 @@ img {
     width: 28.3333%;
   }
 }
+
+
+/*  Contact page/2 column layout
+------------------------------------------ */
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em; 
+}  
+
+.contact-info a {
+  display:block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+  color: #7e0909;
+}
+
+.contact-info li.phone a {
+  background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a {
+  background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a {
+  background-image: url('../img/twitter.png');
+}
+
