@@ -13,18 +13,14 @@
 	</head>
 	
 	<body>
-		<header ID="page_header">
-			<h1 class="site_title"><a href="index.html">BeyondBull.net</a></h1>
-			<nav class="sub_page_nav">
-				<a href="projects.html" class="current_page">Projects</a>
-				<a href="contact.html">Contact</a>
-				<a href="temp.html">Blog</a>
-			</nav>
-			<nav class="icon_nav">
-				<a href="index.html"><img src="img/twitter.png" alt="Twitter Logo" class="social-icon"></a>
-				<a href="index.html"><img src="img/mail.png" alt="Mail Logo" class="social-icon"></a>
-			</nav>
-		</header>
+	<header id="page-header">
+		<div id="title"><a href="index.html"><H1>BeyondBull.net</H1></a></div>
+		<ul id="nav">
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="temp.html">Blog</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</header>
 		
 		<div class="page_content">
 	        <ul class="gallery">
@@ -79,5 +75,17 @@
 	<footer class="page_footer">
 	
 	</footer>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$("#nav").addClass("js").before('<div id="menu">&bull; &bull; &bull;</div>');
+		$("#menu").click(function(){
+			$("#nav").toggle();
+		});
+		$(window).resize(function(){
+			if(window.innerWidth > 480) {
+				$("#nav").removeAttr("style");
+			}
+		});
+	</script>
 	</body>
 </html>

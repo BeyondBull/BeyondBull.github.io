@@ -26,57 +26,93 @@ ul {
 /*  Header
 ------------------------------------------
 ------------------------------------------ */
-#page_header {
-	background: #8A9BAB;
+#page-header {
 	width: 100%;
-	border-bottom: #7e0909 solid 3px;
+	margin-top: 0;
+	background: -webkit-linear-gradient(left, #555, #000 , #555); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #555, #000 , #555); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #555, #000 , #555); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(right, #555, #000 , #555); /* Standard syntax */
 }
-.site_title {
-	display: inline-block;
-	margin: 4% 0% 2% 2%;
+#title {
+	text-align: center;
+	width: 80%;
+	margin:  0 10%;
+	color: #fff;
+	padding: 7px 0;
 }
-.site_title a {
-	color: #505050;
+#title a {
+	color: #fff;
+	font-weight: 300;
 
 }
-
-.sub_page_nav {
-	display: inline-block;
-	margin: 1%;
-	font-family: 'Maven Pro', sans-serif;
+#title h1 {
+	margin: 0;
+	font-weight: 300;
 }
-.sub_page_nav a {
-	color: #505050;
-	margin-left: 10px;
-	
+#menu {
+	padding: 0;
+	font-size: 20px;
+	color: #fff;
+	border-top: #fff solid 1px;
 }
- .sub_page_nav a:hover {
-	color: #7e0909;
+#nav.js {
+	margin-top: 0;
+	text-align: center;
 }
-
-.sub_page_nav a.current_page {
-	border-bottom: #7e0909 solid 1px;
+#nav li {
+	width: 100%;
+	border-top: #666 solid 1px;
+	padding: 7px 0;
 }
-
-.icon_nav {
-	display: none;
-	margin-right: 2%;
-}
-.social-icon {
-	width: 30px;
-	height: 30px;
+#nav a {
+	color: #fff;
+	font-variant: small-caps;
+	font-weight: 300;
 }
 
 
-/*Tablet and Desktop*/
-@media screen and (min-width: 540px) {
-	.icon_nav {
-		display: inline-block;
-		float: right;
+/*Nav menu test appears*/
+@media screen and (max-width: 480px) {
+	#menu {
+		width: 100%;
+		text-align: center;
+	}
+	#nav.js {
+		display: none;
 	}
 }
-	
 
+/*Ellipsis removed*/
+@media screen and (min-width: 480px) {
+	#page-header {
+		float: left;
+	}
+	#menu {
+		display: none;
+	}
+	#title {
+		width: 35%;
+		float: left;
+		text-align: left;
+		margin: 0 5%;;
+	}
+	#nav.js {
+		width: 45%;
+		margin: 0 5%;
+		float: right;
+		text-align: right;
+	}
+	#nav li {
+		display: inline-block;
+		width: 26.6666%;
+		border: none;
+		padding-top: 20px;
+		text-align: right;
+		
+	}
+	
+}
 /*  Home page/2 column with in 2 column layout
 ------------------------------------------	
 ------------------------------------------ */
@@ -133,6 +169,8 @@ ul {
 ------------------------------------------ */
 .gallery {
   margin-bottom: 10px;
+  padding-top: 30px;
+  margin-top: 0;
   list-style: none;
 }
 
@@ -189,6 +227,9 @@ ul {
 }
 /* Phones to Tablets */
 @media only screen and (min-width: 481px) {
+  .gallery {
+	  padding-top: 90px;
+  }
   .gallery li {
     width: 45%;
   }
@@ -213,10 +254,6 @@ ul {
     }
 }
 
-.mask em {
-  font-family: Baskerville, 'Adobe Garamond Pro', Times, serif;
-  font-style: italic;
-}
   
 .hide * {
   -webkit-transition: none !important;
