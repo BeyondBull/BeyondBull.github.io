@@ -103,12 +103,12 @@ ul {
 		float: right;
 		text-align: right;
 	}
-	#nav li {
+	
+	#nav.js li {
 		display: inline-block;
 		width: 26.6666%;
 		border: none;
 		padding-top: 20px;
-		text-align: right;
 		
 	}
 	
