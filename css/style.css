@@ -29,6 +29,7 @@ ul {
 #page-header {
 	width: 100%;
 	margin-top: 0;
+	background: #000;
 	background: -webkit-linear-gradient(left, #555, #000 , #555); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, #555, #000 , #555); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, #555, #000 , #555); /* For Firefox 3.6 to 15 */
@@ -95,7 +96,7 @@ ul {
 		width: 35%;
 		float: left;
 		text-align: left;
-		margin: 0 5%;;
+		margin: 0 5%;
 	}
 	#nav.js {
 		width: 45%;
