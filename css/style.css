@@ -29,11 +29,11 @@ ul {
 #page-header {
 	width: 100%;
 	margin-top: 0;
-	background: #000;
-	background: -webkit-linear-gradient(left, #555, #000 , #555); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #555, #000 , #555); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #555, #000 , #555); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(right, #555, #000 , #555); /* Standard syntax */
+	background: #191816;
+	background: -webkit-linear-gradient(left, #57534C, #191816 , #57534C); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #57534C, #191816 , #57534C); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #57534C, #191816 , #57534C); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(right, #57534C, #191816 , #57534C); /* Standard syntax */
 }
 #title {
 	text-align: center;
@@ -126,7 +126,9 @@ ul {
 	padding: 5% 0;
 }
 .col_content li {
-	margin-bottom: 5px;
+	padding-bottom: 5px;
+	padding-left: 7px;
+	border-left: #A6D0ED solid 3px;
 }
 .col {
 	margin-top: 2%;
