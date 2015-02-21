@@ -1,0 +1,5 @@
+Red #7E0909
+Blue #A6D0ED
+Off White #F1F1F0
+Gray #57534C
+Black #191816
