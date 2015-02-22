@@ -189,10 +189,10 @@ ul {
 	list-style: none;
 }
 #footer li {
-padding-top: 3px;
-font-weight: 100;
-font-size: .8em;
-font-family: 'Crimson Text', serif;
+	padding-top: 3px;
+	font-weight: 100;
+	font-size: .8em;
+	font-family: 'Crimson Text', serif;
 }
 #footer a {
 	color: #7E0909;
